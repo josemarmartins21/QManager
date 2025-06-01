@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --conteudo-do-site:  'Mulish', sans-serif;
+    --titulos-do-site: 'Exo 2', sans-serif;
+    --cabeçalho-cor: #0D3973;
+    --botoes-e-outros: #7C90B3;
+    --footer-e-outros: #000000;
+}
+/*
+#7A98BF
+#049DBF
+#0D0D0D
+*/
+/*Estilos do index*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/*Estilos dos ancestrais primordiais*/
+body, html {
+    font-family: var(--conteudo-do-site);
+}
+
+/*Cabeçalho*/
+header {
+    background-color: var(--cabeçalho-cor);
+    padding-bottom: 20px;
+}
+
+header h1 {
+    display: none;
+}
+/*Hero*/
+#hero {
+    height: 75vh;
+    background-image: url(../image/hero-portrait.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+#hero h1 {
+    padding-top: 20px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 2.3em;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.397);
+    font-family: var(--titulos-do-site);
+   
+}
+
+#links {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#links a {
+    text-decoration: none;
+    background-color: var(--botoes-e-outros);
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    width: 145px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 14px  rgba(0, 0, 0, 0.39);
+}
+
+/*footer*/
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: var(--footer-e-outros);
+}
+
+footer p {
+    margin: 7px 0px;
+}
+
+footer p a {
+    text-decoration: none;
+    color: white;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+footer h1 {
+    margin-bottom: 20px;
+}
+
+footer:last-child {
+    font-weight: bolder;
+}
+
+
