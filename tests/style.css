@@ -107,4 +107,83 @@ footer:last-child {
     font-weight: bolder;
 }
 
+/*Versão desktop*/
+@media (min-width: 1024px) {
+    body {
+        background-color:;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 10px;
+    }
+
+    header img {
+        cursor: pointer;
+    }
+
+    header h1 {
+        display: block;
+        color: #fff;
+        font-weight: 500;
+    }
+
+    #hero {
+        background-image: url(../image/hero-landscape.jpg);
+    }
+
+    div#links {
+        justify-content: center;
+    }
+
+    div#links a {
+        opacity: .9;
+        font-size: .8em;
+        border-radius: 6px;
+    }
+
+    div#links a:hover {
+        opacity: 1;
+    }
+}
+
+/*Versão desktop*/
+@media (min-width: 768px) {
+    body {
+        background-color:;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 10px;
+    }
+
+    header img {
+        cursor: pointer;
+    }
+
+    header h1 {
+        display: block;
+        color: #fff;
+        font-weight: 500;
+    }
+
+    #hero {
+        background-image: url(../image/hero-landscape.jpg);
+    }
+
+
+
+    div#links a {
+        opacity: .7;
+    }
+
+    div#links a:hover {
+        opacity: 1;
+    }
+}
+
+
 
