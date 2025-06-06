@@ -29,11 +29,45 @@ body, html {
 /*Cabeçalho*/
 header {
     background-color: var(--cabeçalho-cor);
-    padding-bottom: 20px;
+    
+  
+    
 }
 
 header h1 {
     display: none;
+}
+
+#logo-pq {
+    width: 150px;
+    margin-top: 20px;
+}
+
+#icone-menu {
+    color: white;
+    
+}
+
+#container-icone {
+    text-align: right;
+    padding-right: 5px;
+}
+menu {
+    padding-top: 10px;
+    display: none;
+}
+
+menu ul li {
+    list-style-type: none;
+    border: 1px solid white;
+    display: block;
+    text-align: center;
+
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
 }
 /*Hero*/
 #hero {
@@ -64,16 +98,8 @@ header h1 {
     justify-content: space-around;
 }
 
-#links a {
-    text-decoration: none;
-    background-color: var(--botoes-e-outros);
-    color: white;
-    padding: 10px;
-    margin: 5px;
-    width: 145px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 1px 1px 14px  rgba(0, 0, 0, 0.39);
+.btn {
+   display: none;
 }
 
 /*footer*/
