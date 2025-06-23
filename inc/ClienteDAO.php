@@ -1,26 +1,30 @@
 <?php
-    class ClienteDAO {
-    private object $pdo;
+    require_once __DIR__ . '/../inc/Conexao.php';
+    abstract class ClienteDAO {
+    protected \PDO $pdo;
 
 
 
-    public function __construct()
+    public function __construct(\PDO $conn)
     {
-        $conn = new Conexao();
-        $this->pdo = $conn->conexao();
+        $this->pdo = $conn;
     }
+
+    abstract public function inserirCLiente(Cliente $cliente);
+    abstract public function deletarCLiente($id);
+    abstract public function atualizarCLiente(Cliente $atualizar);
+    abstract public function listarCLiente();
     
-    public function inserirCLiente($params = []) {
-       $stmt = $this->pdo->prepare("INSERT INTO clientes (nome, telefone, email, pacote, morada) VALUES (:nome, :telefone, :email, :pacote, :morada)");
+    /*public function inserirCLiente($params = []) {
+       $stmt = $this->pdo->prepare("INSERT INTO clientes (nome, telefone, email, pacote, morada, data_renovação) VALUES (:nome, :telefone, :email, :pacote, :morada, :data_renovacao)");
        $stmt->execute($params);
 
     }
 
     public function buscarCLiente() {
-        $stmt = $this->pdo->prepare("SELECT * FROM clientes");
-        $stmt->execute();
-        $dados = $stmt->fetchAll();
-        return $dados;
+        $stmt = $this->pdo->query("SELECT * FROM clientes");
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+        
     }
 
     public function atualizarCLiente($dados) {
@@ -35,5 +39,6 @@
         $stmt = $this->pdo->prepare("DELETE FROM clientes WHERE id_cliente = :id_cliente");
         $stmt->bindValue(":id_cliente",$id, PDO::PARAM_INT);
         $stmt->execute();
-    }
+    }*/
+
     } 

@@ -5,6 +5,7 @@
         private string $email;
         private string $pacote;
         private string $morada;
+        private string $data_nova;
 
 
         public function __construct($nome, $telefone, $email, $pacote, $morada)
@@ -53,7 +54,7 @@
 
         public function __setPacote(string $pacote): void
         {
-            
+            $this->pacote = $pacote;
         }
 
         public function __getMorada()
@@ -65,4 +66,15 @@
         {
             $this->morada = $morada;
         }
+
+        public function __getDataNova()
+        {
+            return $this->data_nova;
+        }
+
+        public function __setDataNOva(string $data)
+        {
+            $this->data_nova = $data;
+        }
+
     }

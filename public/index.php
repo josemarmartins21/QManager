@@ -47,7 +47,7 @@
     require_once __DIR__ . '/../inc/ClienteDAO.php';
 
     $db = new Conexao();
-    $dao = new ClienteDAO();
+   // $dao = new ClienteDAO();
     $data = [
         ':nome' => 'julieta',
         ':email' => 'julieta@email.com',
@@ -57,12 +57,15 @@
         ':id_cliente' => 2
     ];
     #$dao->inserirCLiente($data);
-    $dao->deletarCLiente(2);
+   # $dao->deletarCLiente(2);
 
 
 
     // carregar os scripts
+    require_once __DIR__. "/../inc/header.php";
     require_once __DIR__ . "/../scripts/$script";
+    require_once __DIR__ . "/../inc/footer.php";
+   
     
     
    

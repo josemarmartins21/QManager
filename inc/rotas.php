@@ -1,7 +1,7 @@
 <?php
     return [
         'home',
-        'cadastro',
+        'cadastrar',
         'cadastrados',
         'relatorios'
     ];
