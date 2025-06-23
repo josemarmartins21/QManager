@@ -50,10 +50,6 @@ header a.links:hover {
     text-decoration: underline;
 }
 
-div#nav {
-    display: block;
-}
-
 #hamburguer {
     display: none;
 }

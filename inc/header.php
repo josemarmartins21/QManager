@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../assets/style/celulares.css" media="screen and (max-width: 600px)">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <a href="?pagina=home" id="qos">
             <img src="../assets//image/qos-logo-sem-fundo.png" alt="logo da qos tel" id="logo">
